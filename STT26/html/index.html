@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container border shadow-lg">
+        <div class="header">
+            <img class="w-100" src="../images/HEADER.PNG" alt="">
+        </div>
+        <div class="row menu">
+            <div class="col-12">
+                <nav class="navbar navbar-expand" style="background-color: rgb(240, 240, 240);" >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a href="" style="color: gray;" class="nav-link">Đăng nhập</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" style="color: gray;" class="btn" data-toggle="modal" data-target="#modalID">
+                                Đăng ký
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="row text-center justify-content-center">
+            <h2 class="text-uppercase">danh sách tham gia đội robocon khoa cntt</h2>
+            <table class="table table-bordered">
+                <tr class="fw-bolder">
+                    <td>STT</td>
+                    <td>Mã thành viên</td>
+                    <td>Họ tên</td>
+                    <td>Lớp</td>
+                    <td>Ngày tham gia</td>
+                    <td>Điện thoại</td> 
+                    <td>Email</td> 
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>K16-123456789</td>
+                    <td>Tran Thanh Kha</td>
+                    <td>DHKTPM16ATT</td>
+                    <td>22/02/2022</td>
+                    <td>0909-123-123</td>
+                    <td>thanhkha@iuh.edu.vn</td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- modal fade -->
+        <div class="modal fade" id="modalID">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <h3 class="text-uppercase">thông tin cá nhân</h1>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row form-group mb-4">
+                            <div class="col-4">
+                                <label for="">Mã thành viên</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" id="mathanhvien" class="form-control">
+                                <span id="errmathanhvien" class="err"></span>
+                            </div>
+                        </div>
+                        <div class="row form-group mb-4">
+                            <div class="col-4">
+                                <label for="">Họ tên</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" id="hoten" class="form-control">
+                                <span id="errhoten" class="err"></span>
+                            </div>
+                        </div>
+                        <div class="row form-group mb-4">
+                            <div class="col-4">
+                                <label for="">Lớp</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" id="lop" class="form-control">
+                                <span id="errlop" class="err"></span>
+                            </div>
+                        </div>
+                        <div class="row form-group mb-4">
+                            <div class="col-4">
+                                <label for="">Ngày tham gia</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="date" id="ngaythamgia" class="form-control">
+                                <span id="errngaythamgia" class="err"></span>
+                            </div>
+                        </div>
+                        <div class="row form-group mb-4">
+                            <div class="col-4">
+                                <label for="">Số điện thoại</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" id="sdt" class="form-control">
+                                <span id="errsdt" class="err"></span>
+                            </div>
+                        </div>
+                        <div class="row form-group mb-4">
+                            <div class="col-4">
+                                <label for="">Email</label>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" id="email" class="form-control">
+                                <span id="erremail" class="err"></span>
+                            </div>
+                        </div>
+                        
+                        
+                        
+                        
+                        
+                        <div class="form-group mb-4 w-100">
+                            <div class="text-end d-flex">
+                                <button type="button" id="btnDangKy" class="w-100 btn btn-success">Lưu</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer justify-content-center">
+            <div class="col-8">
+                <div class="row justify-content-around">
+                    <div class="">SVTH: ..........</div>
+                    <div class="">Mã số sinh viên: abc.......</div>
+                    <div class="">Lớp: DHKTPM16...</div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+
+<script src="../js/script.js"></script>
+
+</html>
